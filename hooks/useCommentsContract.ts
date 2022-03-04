@@ -5,7 +5,7 @@ import type { BigNumber } from "ethers"
 // The hardhat compiler writes this file to artifacts during compilation.
 import CommentsContract from "../artifacts/contracts/Comments.sol/Comments.json"
 
-export interface Comment {
+export interface IComment {
   id: string;
   topic: string;
   message: string;
@@ -36,7 +36,7 @@ const useCommentsContract = () => {
   })
 
   // Wrapper to add types to our getComments function.
-  const getComments = async (topic: string): Promise<Comment[]> => {
+  const getComments = async (topic: string): Promise<IComment[]> => {
     return contract.getComments(topic).then((comments) => {
       // Each comment is represented as array by default so we convert to object
       return comments.map((c) => ({ ...c }))

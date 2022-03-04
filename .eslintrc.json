@@ -21,6 +21,7 @@
     "react"
   ],
   "rules": {
+    "no-use-before-define": "off",
     "semi": [2, "never"],
     "indent": ["error", 2],
     "quotes": ["error", "double"]

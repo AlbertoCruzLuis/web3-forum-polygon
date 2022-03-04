@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 import * as React from "react"
 import { QueryClient, QueryClientProvider, QueryCache } from "react-query"
-import { ChakraProvider, Box, Heading } from "@chakra-ui/react"
+import { ChakraProvider, Box } from "@chakra-ui/react"
 import { Toaster, toast } from "react-hot-toast"
 import theme from "../theme"
 import { Provider as WagmiProvider } from "wagmi"
