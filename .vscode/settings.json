@@ -1,0 +1,10 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "eslint.validate": [
+    "typescrypt"
+  ],
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false
+}

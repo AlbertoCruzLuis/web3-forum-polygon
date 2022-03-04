@@ -1,20 +1,20 @@
-import { extendTheme, theme as DEFAULT_THEME } from "@chakra-ui/react";
+import { extendTheme, theme as DEFAULT_THEME } from "@chakra-ui/react"
 
 const theme = extendTheme({
   config: {
     initialColorMode: "dark",
-    useSystemColorMode: false,
+    useSystemColorMode: false
   },
   fonts: {
     heading: "Poppins",
-    body: "Poppins",
+    body: "Poppins"
   },
   styles: {
     global: {
       body: {
-        bgGradient: "",
-      },
-    },
+        bgGradient: ""
+      }
+    }
   },
   colors: {
     gray: {
@@ -27,32 +27,32 @@ const theme = extendTheme({
       600: "#525252",
       700: "#404040",
       800: "#262626",
-      900: "#171717",
-    },
+      900: "#171717"
+    }
   },
   components: {
     Avatar: {
       baseStyle: {
         container: {
-          bgGradient: "linear(to-r, purple.300, pink.300)",
+          bgGradient: "linear(to-r, purple.300, pink.300)"
           // border: "2px solid var(--chakra-colors-purple-300)"
-        },
-      },
+        }
+      }
     },
     Textarea: {
       defaultProps: {
-        focusBorderColor: "pink.200",
-      },
+        focusBorderColor: "pink.200"
+      }
     },
     Spinner: {
       baseStyle: {
-        color: "pink.200",
-      },
-    },
+        color: "pink.200"
+      }
+    }
   },
   shadows: {
-    outline: "0 0 0 3px var(--chakra-colors-pink-200) !important",
-  },
-});
+    outline: "0 0 0 3px var(--chakra-colors-pink-200) !important"
+  }
+})
 
-export default theme;
+export default theme
